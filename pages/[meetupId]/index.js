@@ -10,10 +10,27 @@ const MeetupDetailPage = (props) => {
   );
 };
 
+export const getStaticPaths = async () => {
+  return {
+    paths: [
+      {
+        params: {
+          meetupId: "m1",
+        },
+      },
+      {
+        params: {
+          meetupId: "m2",
+        },
+      },
+    ],
+  };
+};
+
 export const getStaticProps = async (context) => {
   // fetch data from API route
-
   const meetupId = context.params.meetupId;
+  console.log(meetupId);
 
   return {
     props: {
