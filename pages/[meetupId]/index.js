@@ -31,7 +31,6 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
   // fetch data from API route
   const meetupId = context.params.meetupId;
-  console.log(meetupId);
 
   return {
     props: {
