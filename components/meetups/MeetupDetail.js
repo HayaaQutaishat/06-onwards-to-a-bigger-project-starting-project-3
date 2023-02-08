@@ -1,9 +1,11 @@
-const MeetupDetail = () => {
+import classes from "./MeetupDetail.module.css";
+const MeetupDetail = (props) => {
   return (
-    <section>
-      <img src="" alt="" />
-      <h1>A First Meetup</h1>
-      <address>Some address 12, City</address>
+    <section className={classes.detail}>
+      <img src={props.image} alt={props.title} />
+      <h1>{props.title}</h1>
+      <address>{props.address}</address>
+      <p>{props.description}</p>
     </section>
   );
 };
