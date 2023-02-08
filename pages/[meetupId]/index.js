@@ -12,6 +12,7 @@ const MeetupDetailPage = (props) => {
 
 export const getStaticPaths = async () => {
   return {
+    fallback: false,
     paths: [
       {
         params: {
