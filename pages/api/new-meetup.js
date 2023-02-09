@@ -18,6 +18,7 @@ const handler = async (req, res) => {
     client.close();
 
     console.log(result);
+    res.status(201).json({ message: "Meetup inserted successfully!" });
   }
 };
 
