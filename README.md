@@ -31,6 +31,9 @@ The API routes act as the intermediary between the frontend and the database, pr
 This app utilizes CSS modules for styling its components. CSS modules allow for modular and reusable styles to be written in a scoped manner, so that styles are only applied to the intended components and do not leak out to affect unintended parts of the app. 
 
 
+This app utilizes head metadata, which refers to information that is placed in the head section of a web page's HTML code. This metadata provides additional information about the page, such as its title, description, and keywords, which is used by search engines to better understand the content and context of the page. Additionally, head metadata can also be used to specify various other settings, such as the character set, viewport size, and stylesheets to be used by the page.
+
+
 ## Technologies used :
 
 -  React
