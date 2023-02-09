@@ -3,8 +3,7 @@
 Welcome to the Meetups Next.js App!
 
 
-This simple application is a basic full-stack web application built using Next.js as the front-end framework and React for UI components, and MongoDB Atlas as the back-end database. The purpose of this project is to provide a simple, scalable and modular solution for building and deploying full-stack web applications.
-
+This simple application is a basic full-stack web application built using Next.js as the front-end framework and React for UI components, and MongoDB Atlas as the back-end database. 
 
 <img width="1440" alt="Screen Shot 2023-02-08 at 3 56 45 PM" src="https://user-images.githubusercontent.com/95029840/217836971-4dddc073-3387-480b-8d87-e6ce47eba43d.png">
 
