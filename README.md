@@ -17,10 +17,9 @@ This application is structured into a number of pages which are theHome page whi
 This application uses the built-in server-side rendering capabilities of Next.js to fetch and display the data from database. "getStaticProps" function is used to fetch the data from the database during the build time, which means that the data will be pre-rendered on the page before it is even served to the user. This results in a faster loading time, since the data is already available on the page, and the user does not have to wait for the data to be fetched from the database.
 
 
-
 <img width="1440" alt="Screen Shot 2023-02-09 at 9 39 34 AM" src="https://user-images.githubusercontent.com/95029840/217865551-698420ed-2a19-4f07-be2f-377300ffe818.png">
 
-When users submit the form for adding a new meetup, a request is sent from the frontend to my custom API routes. These API routes then connect to a MongoDB database, allowing for the storage of user-submitted data.
+When users submit the form for adding a new meetup, a request is sent from the frontend to my custom API routes. These API routes then connect to a MongoDB database, allowing for the storage of user-submitted data. Once the users submit the form, they will be programmatically navigated to another page using the useRoute() react hook.
 
 
 The API routes act as the intermediary between the frontend and the database, processing the incoming request and retrieving the necessary information from the MongoDB database. This information is then returned to the frontend and displayed to the user. The use of API routes in combination with MongoDB allows for seamless and efficient data processing, storage, and retrieval, providing a smooth user experience.
