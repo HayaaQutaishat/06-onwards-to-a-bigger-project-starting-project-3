@@ -14,7 +14,7 @@ This simple application is a basic full-stack web application built using Next.j
 This application is structured into a number of pages which are theHome page which is a page shows all the meetups that exist in the database. "Add New Meetup" page for adding a brand new Meetup. And a "Meetup Detailed" page, which is the page we go to when click on a signle meetup. This application uses MongoDB Atlas as a backend for storing and retrieving data.
 
 
-This application uses the built-in server-side rendering capabilities of Next.js to fetch and display the data from database. 
+This application uses the built-in server-side rendering capabilities of Next.js to fetch and display the data from database. "getStaticProps" function is used to fetch the data from the database during the build time, which means that the data will be pre-rendered on the page before it is even served to the user. This results in a faster loading time, since the data is already available on the page, and the user does not have to wait for the data to be fetched from the database.
 
 
 
