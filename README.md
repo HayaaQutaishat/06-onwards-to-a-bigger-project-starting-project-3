@@ -28,6 +28,8 @@ The API routes act as the intermediary between the frontend and the database, pr
 <img width="1440" alt="Screen Shot 2023-02-09 at 9 39 55 AM" src="https://user-images.githubusercontent.com/95029840/217866211-e9bdf6f8-4f92-4e70-8cfc-9ce00aa5af3a.png">
 
 
+This app utilizes CSS modules for styling its components. CSS modules allow for modular and reusable styles to be written in a scoped manner, so that styles are only applied to the intended components and do not leak out to affect unintended parts of the app. 
+
 
 ## Technologies used :
 
