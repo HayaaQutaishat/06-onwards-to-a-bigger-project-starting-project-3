@@ -47,19 +47,18 @@ export const getStaticProps = async (context) => {
     _id: new ObjectId(meetupId),
   });
 
-  console.log(selectedMeetup);
+  // console.log(selectedMeetup);
 
   client.close();
 
   return {
     props: {
       meetupData: {
-        id: meetupId,
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1280px-Stadtbild_M%C3%BCnchen.jpg",
-        title: "A First Meetup",
-        address: "Some address 12, City",
-        description: "This is the first meetup",
+        id: selectedMeetup._id.toString(),
+        image: selectedMeetup.image,
+        title: selectedMeetup.title,
+        address: selectedMeetup.address,
+        description: selectedMeetup.description,
       },
     },
   };
