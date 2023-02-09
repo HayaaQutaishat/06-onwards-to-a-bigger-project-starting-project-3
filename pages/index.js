@@ -36,7 +36,7 @@ export const getStaticProps = async () => {
 
   client.close();
 
-  console.log(meetups);
+  // console.log(meetups);
 
   return {
     props: {

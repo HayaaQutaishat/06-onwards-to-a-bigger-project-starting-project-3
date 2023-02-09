@@ -1,4 +1,6 @@
 import MeetupDetail from "../../components/meetups/meetupDetail";
+import { MongoClient } from "mongodb";
+
 const MeetupDetailPage = (props) => {
   return (
     <MeetupDetail
@@ -11,20 +13,22 @@ const MeetupDetailPage = (props) => {
 };
 
 export const getStaticPaths = async () => {
+  const client = await MongoClient.connect(
+    "mongodb+srv://Hayaa:Heyheyyou1997%40%40@atlascluster.k4pqhv7.mongodb.net/meetups?retryWrites=true&w=majority"
+  );
+  const db = client.db();
+  const meetupCollections = db.collection("meetups");
+  const meetups = await meetupCollections.find({}, { _id: 1 }).toArray();
+
+  console.log(meetups);
+
+  client.close();
+
   return {
     fallback: false,
-    paths: [
-      {
-        params: {
-          meetupId: "m1",
-        },
-      },
-      {
-        params: {
-          meetupId: "m2",
-        },
-      },
-    ],
+    paths: meetups.map((meetup) => ({
+      params: { meetupId: meetup._id.toString() },
+    })),
   };
 };
 
