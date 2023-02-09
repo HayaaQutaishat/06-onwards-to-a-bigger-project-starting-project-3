@@ -36,7 +36,7 @@ Before you can run this app, you will need to have the following software instal
 
 - Clone the repository: git clone https://github.com/[USERNAME]/react-product-ordering.git
 - Navigate to the project directory: cd react-product-ordering
-- Install all dependencies: run npm install (when you run npm install, you already installed React Router version 5. No need to install it separately)
+- Install all dependencies: run npm install
 - Install the MongoDB driver: npm install mongodb (This command will download and install the latest version of the MongoDB driver, allowing you to connect to and interact with a MongoDB database from your Node.js application)
 - Start the development server: run npm start
 
