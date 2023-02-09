@@ -11,7 +11,7 @@ This simple application is a basic full-stack web application built using Next.j
 
 ### Project purpose :
 
-This application is structured into a number of pages which are theHome page which is a page shows all the meetups that exist in the database. "Add New Meetup" page for adding a brand new Meetup. And a "Meetup Detailed" page, which is the page we go to when click on a signle quote. This application uses MongoDB Atlas as a backend for storing and retrieving data.
+This application is structured into a number of pages which are theHome page which is a page shows all the meetups that exist in the database. "Add New Meetup" page for adding a brand new Meetup. And a "Meetup Detailed" page, which is the page we go to when click on a signle meetup. This application uses MongoDB Atlas as a backend for storing and retrieving data.
 
 
 
