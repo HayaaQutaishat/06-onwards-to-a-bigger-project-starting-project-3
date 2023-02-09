@@ -23,6 +23,10 @@ This application uses the built-in server-side rendering capabilities of Next.js
 When users submit the form for adding a new meetup, a request is sent from the frontend to my custom API routes. These API routes then connect to a MongoDB database, allowing for the storage of user-submitted data.
 
 
+<img width="1440" alt="Screen Shot 2023-02-09 at 9 39 55 AM" src="https://user-images.githubusercontent.com/95029840/217866211-e9bdf6f8-4f92-4e70-8cfc-9ce00aa5af3a.png">
+
+
+
 ## Technologies used :
 
 -  React
