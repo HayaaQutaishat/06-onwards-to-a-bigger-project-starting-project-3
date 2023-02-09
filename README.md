@@ -30,6 +30,7 @@ Before you can run this app, you will need to have the following software instal
 
 - Node.js
 - npm (which comes with Node)
+- MongoDB 
 
 
 ## Setting up the app :
