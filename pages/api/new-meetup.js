@@ -9,6 +9,15 @@ const handler = async (req, res) => {
     const client = await MongoClient.connect(
       "mongodb+srv://Hayaa:Heyheyyou1997%40%40@atlascluster.k4pqhv7.mongodb.net/meetups?retryWrites=true&w=majority"
     );
+    const db = client.db();
+
+    const meetupCollections = db.collection("meetups");
+    const result = await meetupCollections.insertOne(data);
+
+    // close the connection with the database
+    client.close();
+
+    console.log(result);
   }
 };
 
