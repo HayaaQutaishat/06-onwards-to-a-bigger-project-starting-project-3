@@ -14,6 +14,13 @@ This simple application is a basic full-stack web application built using Next.j
 This application is structured into a number of pages which are theHome page which is a page shows all the meetups that exist in the database. "Add New Meetup" page for adding a brand new Meetup. And a "Meetup Detailed" page, which is the page we go to when click on a signle meetup. This application uses MongoDB Atlas as a backend for storing and retrieving data.
 
 
+This application uses the built-in server-side rendering capabilities of Next.js to fetch and display the data from database. 
+
+
+
+<img width="1440" alt="Screen Shot 2023-02-09 at 9 39 34 AM" src="https://user-images.githubusercontent.com/95029840/217865551-698420ed-2a19-4f07-be2f-377300ffe818.png">
+
+When users submit the form for adding a new meetup, a request is sent from the frontend to my custom API routes. These API routes then connect to a MongoDB database, allowing for the storage of user-submitted data.
 
 
 ## Technologies used :
