@@ -18,8 +18,8 @@ This simple Next.js app built with React
 
 -  React
 -  Next.js
--  StaticSite Generation (SSG)
 - MongoDB Atlas
+- Static Site Generation (SSG)
 
 
 
